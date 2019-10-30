@@ -273,6 +273,14 @@
                                     <action selector="submitButtonTappedOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHo-6q-HJW"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MultiVault" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd1-Zw-Gqu">
+                                <rect key="frame" x="0.0" y="304" width="414" height="384"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.89044284330000001" green="0.1404778267" blue="0.1075450073" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES" adjustable="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93781725888324874" green="0.83274898540409004" blue="0.47466372289734016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -283,15 +291,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uhx-uN-dWe" secondAttribute="trailing" constant="50" id="S7m-lp-daV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ief-Fg-YhX" secondAttribute="trailing" constant="52" id="VPm-u0-8rO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2CO-rS-Pbv" secondAttribute="trailing" constant="60" id="WGU-sf-pts"/>
+                            <constraint firstItem="xd1-Zw-Gqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y5A-du-sZr"/>
                             <constraint firstItem="2CO-rS-Pbv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cnE-fw-uDR"/>
                             <constraint firstItem="ief-Fg-YhX" firstAttribute="leading" secondItem="pA2-IP-GNb" secondAttribute="trailing" id="dcp-mK-TeQ"/>
                             <constraint firstItem="s2R-eC-BC4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="dn6-rs-QzL"/>
                             <constraint firstItem="ief-Fg-YhX" firstAttribute="top" secondItem="uhx-uN-dWe" secondAttribute="bottom" constant="24" id="eQT-rz-cyH"/>
                             <constraint firstItem="six-QW-TB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="eg9-eE-0u8"/>
                             <constraint firstItem="2CO-rS-Pbv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="hm7-dC-Fc2"/>
+                            <constraint firstItem="xd1-Zw-Gqu" firstAttribute="top" secondItem="ief-Fg-YhX" secondAttribute="bottom" constant="28" id="iTR-5E-XTd"/>
                             <constraint firstItem="pA2-IP-GNb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oPk-9h-qcy"/>
+                            <constraint firstAttribute="trailing" secondItem="xd1-Zw-Gqu" secondAttribute="trailing" id="oTe-V5-V5R"/>
                             <constraint firstItem="uhx-uN-dWe" firstAttribute="top" secondItem="2CO-rS-Pbv" secondAttribute="bottom" constant="8" id="r8j-un-EK3"/>
                             <constraint firstItem="six-QW-TB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sXP-yu-obA"/>
+                            <constraint firstItem="s2R-eC-BC4" firstAttribute="top" secondItem="xd1-Zw-Gqu" secondAttribute="bottom" constant="23" id="tbM-PH-Kbg"/>
                             <constraint firstItem="2CO-rS-Pbv" firstAttribute="top" secondItem="six-QW-TB4" secondAttribute="bottom" constant="8" id="ulT-pl-fcS"/>
                             <constraint firstItem="uhx-uN-dWe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="w5D-tA-XZM"/>
                         </constraints>
@@ -305,11 +317,12 @@
                         <outlet property="firstNamelabel" destination="Lo2-uY-btr" id="YIp-FY-5wq"/>
                         <outlet property="lastNamelabel" destination="b8A-3j-X6y" id="dR7-FT-KNS"/>
                         <outlet property="lastNmaeTextField" destination="wgl-CI-xGD" id="sYW-Xe-mOx"/>
+                        <outlet property="multiVaultimage" destination="xd1-Zw-Gqu" id="5PL-Zs-9IH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="-62"/>
+            <point key="canvasLocation" x="247.82608695652175" y="-62.276785714285708"/>
         </scene>
         <!--Reserve View Controller-->
         <scene sceneID="QBQ-tw-ARA">
@@ -378,4 +391,7 @@
             <point key="canvasLocation" x="247.82608695652175" y="614.0625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MultiVault" width="776" height="675.5"/>
+    </resources>
 </document>

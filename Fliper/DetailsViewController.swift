@@ -21,6 +21,11 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var lastNmaeTextField: UITextField!
     @IBOutlet weak var emaillabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
+    
+    
+    @IBOutlet weak var multiVaultimage: UIImageView!
+    
+    
     @IBAction func submitButtonTappedOn(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
         
