@@ -9,6 +9,24 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    
+    @IBOutlet weak var detalislabel: UILabel!
+    
+    @IBOutlet weak var firstNamelabel: UILabel!
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNamelabel: UILabel!
+    @IBOutlet weak var lastNmaeTextField: UITextField!
+    @IBOutlet weak var emaillabel: UILabel!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBAction func submitButtonTappedOn(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        
+        print("Tapped Back to viewcontroller('from SUBMIT')")
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +46,7 @@ class DetailsViewController: UIViewController {
     }
     */
 
-    @IBOutlet weak var detalislabel: UILabel!
-    
-    @IBOutlet weak var firstNamelabel: UILabel!
-    
-    @IBOutlet weak var firstNameTextField: UITextField!
-    
- @IBOutlet weak var lastNamelabel: UILabel!
-    @IBOutlet weak var lastNmaeTextField: UITextField!
-    @IBOutlet weak var emaillabel: UILabel!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBAction func submitButtonTappedOn(_ sender: UIButton) {
-    }
+   
     
     
     

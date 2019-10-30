@@ -22,20 +22,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayNamelabel: UILabel!
     @IBOutlet weak var displayEmailButton: UIButton!
     
+    @IBOutlet var stackGOCommentsFliperView: [UIView]!
     
-    @IBAction func displayEmailTappedOn(_ sender: Any) {
-        displayEmailButton.setTitle("Tapped", for: .normal)
-        
+    
+    
+    @IBAction func goTapped(_ sender: Any) {
+        print("Tapped")
     }
-    
+    @IBOutlet weak var golabel: UIButton!
     @IBAction func goButtonTappedOn(_ sender: UIButton) {
         
-    
+       // let vc = DetailsViewController()
+       // self.present(vc, animated: true, completion: nil)
+    self.performSegue(withIdentifier: "showDetails", sender: nil)
+        
+        print("Tapped showdetails")
+        
     }
     
     @IBOutlet weak var notelabelGO: UILabel!
+    @IBOutlet weak var dataReserveslabel: UIButton!
     
     @IBAction func dataReservesButtonTapped(_ sender: UIButton) {
+       print("Tapped datareserves")
+        
+       // let dataReserveslabel = ReserveViewController()
+        self.performSegue(withIdentifier: "showTreasure", sender: nil)
+        
+        
+        
     }
     
     @IBOutlet weak var countlabel: UILabel!

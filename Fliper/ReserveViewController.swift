@@ -31,7 +31,12 @@ class ReserveViewController: UIViewController {
     @IBOutlet weak var stackedDatalabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func thankYouButton(_ sender: UIButton) {
+    @IBOutlet weak var thankYoulabel: UIButton!
+  
+    @IBAction func thankTouButtonTappedOn(_ sender: Any) {
+        self.dismiss(animated:true, completion:nil)
+        
+        print("Tapped Back to viewcontroller ('from THANKYOU')")
     }
     
 }
