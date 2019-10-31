@@ -17,6 +17,8 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     
+    
+    
     @IBOutlet weak var lastNamelabel: UILabel!
     @IBOutlet weak var lastNmaeTextField: UITextField!
     @IBOutlet weak var emaillabel: UILabel!
@@ -30,6 +32,17 @@ class DetailsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
         
         print("Tapped Back to viewcontroller('from SUBMIT')")
+       let firstName : String = firstNameTextField.text ?? "String"
+        
+       //print(testString)
+       // print(firstNameTextField.text ?? nil ?? "00")
+        
+        let lastName: String = lastNmaeTextField.text ?? "String"
+        
+        print(firstName + " " + lastName)
+        
+        UserDefaults.standard.set(firstName + " " + lastName, forKey: "lastNameKey")
+        print(UserDefaults.standard.value(forKey: "lastNameKey") ?? "Display Name")
         
     }
 
@@ -39,6 +52,8 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    
     
 
     /*

@@ -11,8 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        print(UserDefaults.standard.value(forKey: "lasNameKey") ?? "Display Name")
+        
     }
 
     @IBOutlet weak var INFO_Treasurylabel: UILabel!
@@ -20,6 +24,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var Welcomelabel: UILabel!
     @IBOutlet var stack1Fliperview: [UIView]!
     @IBOutlet weak var displayNamelabel: UILabel!
+    
+    
+    
     @IBOutlet weak var displayEmailButton: UIButton!
     
     @IBOutlet var stackGOCommentsFliperView: [UIView]!
@@ -43,6 +50,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var notelabelGO: UILabel!
     @IBOutlet weak var dataReserveslabel: UIButton!
     
+    override func viewDidAppear(_ animated: Bool) {
+        displayNamelabel.text = UserDefaults.standard.value(forKey: "lastNameKey") as? String
+    }
+    
     @IBAction func dataReservesButtonTapped(_ sender: UIButton) {
        print("Tapped datareserves")
         
@@ -55,6 +66,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var countlabel: UILabel!
     
-    
+
 }
 
